@@ -9,7 +9,7 @@
                 android:id="@+id/productName"
                 android:layout_width="105dp"
                 android:layout_height="wrap_content"
-                android:text="SumSang Fridge"
+                android:text="Maça Fuji"
                 android:fontFamily="@font/roboto_mono"
                 android:ellipsize="end"
                 android:maxLines="1"/>

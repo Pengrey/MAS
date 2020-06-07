@@ -73,12 +73,12 @@ public class OrderController {
 	}
 
 	public double getInitialProductPrice(int index){
-			return Double.parseDouble(basket.getProductsToOrder().get(index).getPrice().toString());
+			return basket.getProductsToOrder().get(index).getPrice();
 	}
 
 
 	public void setProductPrice(int index, int quantity){
-		productsPrice.set(index, quantity*Double.parseDouble(basket.getProductsToOrder().get(index).getPrice().toString()));
+		productsPrice.set(index, quantity*(basket.getProductsToOrder().get(index).getPrice()));
 	}
 
 	public void addProduct (int index) {

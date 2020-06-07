@@ -48,13 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    protected void addBasket(View view){
+    public void addBasket(View view){
         int tag = Integer.parseInt(view.getTag().toString());
         orderController.addProduct(tag);
         view.setBackgroundResource(R.drawable.ic_done);
     }
-
-
-
-
 }

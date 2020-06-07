@@ -70,11 +70,11 @@ public class CheckoutActivity extends AppCompatActivity {
         }
     }
 
-    protected void toMainActivity(View view){
+    public void toMainActivity(View view){
         super.onBackPressed();
     }
 
-    protected void addQuantity(View view){
+    public void addQuantity(View view){
         DecimalFormat decimalFormat = new DecimalFormat("#0.00");
 
         if (changeProductQuantity(true, view)) {
@@ -84,7 +84,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
     }
 
-    protected void removeQuantity(View view){
+    public void removeQuantity(View view){
         DecimalFormat decimalFormat = new DecimalFormat("#0.00");
 
         if (changeProductQuantity(false, view)) {
